@@ -34,7 +34,7 @@ public class TrueFalseQuestion extends Question {
     }
 
     public boolean isCorrect(String userInputAnswer) {
-        if (userInputAnswer == this.answer.toString()) {
+        if (userInputAnswer.toLowerCase() == this.answer.toString().toLowerCase()) {
             return true;
         } else {
             return false;
