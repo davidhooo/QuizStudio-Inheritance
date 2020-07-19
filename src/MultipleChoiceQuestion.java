@@ -4,17 +4,20 @@ import java.util.ArrayList;
 
 public class MultipleChoiceQuestion extends Question {
 
-    public MultipleChoiceQuestion(String questionString, String answerString) {
+    public MultipleChoiceQuestion(String questionString) {
         this.questionString = "";
         this.answer = new ArrayList<String>();
         this.questionType = "Multiple Choice Question";
 
         this.questionString = questionString;
-        this.answer.add(answerString);
     }
 
-    public void setQuestionString(String newQuestionString) {
+    public void setQuestion(String newQuestionString) {
         this.questionString = newQuestionString;
+    }
+
+    public void setAnswer(String answerString) {
+        this.answer.add(answerString);
     }
 
     public String getQuestion() {

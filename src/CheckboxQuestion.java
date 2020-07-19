@@ -12,12 +12,12 @@ public class CheckboxQuestion extends Question {
         this.questionString = questionString;
     }
 
-    public void setQuestionString(String newQuestionString) {
+    public void setQuestion(String newQuestionString) {
         this.questionString = newQuestionString;
     }
 
-    public void addOneAnswer(String answer) {
-        this.answer.add(answer);
+    public void setAnswer(String answerString) {
+        this.answer.add(answerString);
     }
 
     public String getQuestion() {

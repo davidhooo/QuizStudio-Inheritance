@@ -3,13 +3,12 @@ import java.util.ArrayList;
 
 public class TrueFalseQuestion extends Question {
 
-    public TrueFalseQuestion(String questionString, String answerString) {
+    public TrueFalseQuestion(String questionString) {
         this.questionString = "";
         this.answer = new ArrayList<String>();
         this.questionType = "True or False Question";
 
         this.questionString = questionString;
-        this.answer.add(answerString);
     }
 
 //    public TrueFalseQuestion() {
@@ -17,8 +16,12 @@ public class TrueFalseQuestion extends Question {
 //        this.answer = new ArrayList<String>();
 //    }
 
-    public void setQuestionString(String newQuestionString) {
+    public void setQuestion(String newQuestionString) {
         this.questionString = newQuestionString;
+    }
+
+    public void setAnswer(String answerString) {
+        this.answer.add(answerString);
     }
 
     public String getQuestion() {
