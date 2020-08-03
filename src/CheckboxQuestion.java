@@ -20,6 +20,8 @@ public class CheckboxQuestion extends Question {
         this.answer.add(answerString);
     }
 
+    public void setQuestionType(String questionType) {this.questionType = questionType;}
+
     public String getQuestion() {
         return this.questionString;
     }
@@ -30,5 +32,9 @@ public class CheckboxQuestion extends Question {
 
     public String getQuestionType() {
         return this.questionType;
+    }
+
+    public boolean isCorrect(String userInputAnswer) {
+        return userInputAnswer.toLowerCase().equals(this.answer.get(0).toLowerCase());
     }
 }

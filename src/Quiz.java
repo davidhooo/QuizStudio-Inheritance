@@ -22,16 +22,16 @@ public class Quiz {
         listOfQuestions.add(newQuestion);
     }
 
-    public String getInput() {
-        Scanner input = new Scanner(System.in);
-        String userInput;
-
-        do {
-            userInput = input.nextLine();
-        } while(!userInput.equals(""));
-
-        return userInput;
-    }
+//    public String getInput() {
+//        Scanner input = new Scanner(System.in);
+//        String userInput;
+//
+//        do {
+//            userInput = input.nextLine();
+//        } while(!userInput.equals(""));
+//
+//        return userInput;
+//    }
 
     public Question getQuestionAtIndex(int index) {
         return this.listOfQuestions.get(index);

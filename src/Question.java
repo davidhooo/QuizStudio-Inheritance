@@ -11,10 +11,12 @@ public abstract class Question {
     //Getters
     public abstract String getQuestion();
     public abstract ArrayList<String> getAnswer();
+    public abstract String getQuestionType();
 
     //Setters
     public abstract void setQuestion(String questionString);
     public abstract void setAnswer(String answerString);
+    public abstract void setQuestionType(String questionType);
 
-
+    public abstract boolean isCorrect(String answer);
 }

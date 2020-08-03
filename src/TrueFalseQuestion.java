@@ -24,6 +24,8 @@ public class TrueFalseQuestion extends Question {
         this.answer.add(answerString);
     }
 
+    public void setQuestionType(String questionType) { this.questionType = questionType; }
+
     public String getQuestion() {
         return this.questionString;
     }
@@ -37,10 +39,6 @@ public class TrueFalseQuestion extends Question {
     }
 
     public boolean isCorrect(String userInputAnswer) {
-        if (userInputAnswer.toLowerCase() == this.answer.toString().toLowerCase()) {
-            return true;
-        } else {
-            return false;
-        }
+        return userInputAnswer.toLowerCase().equals(this.answer.get(0).toLowerCase());
     }
 }
